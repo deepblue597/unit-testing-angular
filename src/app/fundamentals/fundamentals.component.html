@@ -1,1 +1,5 @@
-<p>fundamentals works!</p>
+<div [hidden]="hideContent">
+  <p>Warning code {{ severity }}</p>
+</div>
+
+<button (click)="toggle()">Toggle visibility</button>

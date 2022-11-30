@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { timer } from 'rxjs';
 
 @Component({
   selector: 'app-fundamentals',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./fundamentals.component.css'],
 })
 export class FundamentalsComponent implements OnInit {
+  hideContent = true;
+  severity = 'you have been warned';
   constructor() {}
 
   ngOnInit(): void {}
@@ -15,5 +18,15 @@ export class FundamentalsComponent implements OnInit {
       return 0;
     }
     return number + 1;
+  }
+
+  toggle() {
+    this.hideContent = !this.hideContent;
+  }
+
+  toggleAsync() {
+    timer(500).subscribe(() => {
+      this.toggle();
+    });
   }
 }
