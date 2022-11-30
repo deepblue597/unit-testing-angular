@@ -6,6 +6,7 @@ import {
   tick,
 } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
+import { of } from 'rxjs';
 
 import { FundamentalsComponent } from './fundamentals.component';
 
@@ -58,4 +59,8 @@ describe('FundamentalsComponent', () => {
     tick(500); // waits 500 to check if it has changed
     expect(component.hideContent).toBeFalsy();
   }));
+
+  // serviceSub = {
+  //   getContent : () => of('You have been warned')
+  // } //this i dont understand
 });
