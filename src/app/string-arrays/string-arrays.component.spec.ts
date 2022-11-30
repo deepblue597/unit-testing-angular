@@ -30,7 +30,7 @@ describe('StringArraysComponent', () => {
 
   it('should contain the currencies', () => {
     const result = component.getCurrencies();
-    expect(result).toContain('USD');
+    expect(result).toContain('USD'); // we dont care about the position thats why we put them like that
     expect(result).toContain('EUR');
     expect(result).toContain('AUD');
   });
