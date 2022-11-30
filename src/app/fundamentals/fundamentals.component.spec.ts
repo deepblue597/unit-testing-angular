@@ -20,13 +20,11 @@ describe('FundamentalsComponent', () => {
   });
 
   it('should return 0 if input < 0', () => {
-    const comp = new FundamentalsComponent(); // we need to create tha component
-    const result = comp.compute(-1); // we call the function
+    const result = component.compute(-1); // we call the function
     expect(result).toBe(0); //we test its value
   });
   it('should increment if input > 0', () => {
-    const comp = new FundamentalsComponent(); // we need to create tha component
-    const result = comp.compute(1); // we call the function
+    const result = component.compute(1); // we call the function
     expect(result).toBe(2); //we test its value
   });
 });
