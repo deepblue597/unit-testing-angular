@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { timer } from 'rxjs';
+import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-fundamentals',
@@ -9,7 +10,7 @@ import { timer } from 'rxjs';
 export class FundamentalsComponent implements OnInit {
   hideContent = true;
   severity = 'you have been warned';
-  constructor() {}
+  constructor(private msgService: MessageService) {}
 
   ngOnInit(): void {}
 
