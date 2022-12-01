@@ -6,19 +6,19 @@ import { AppComponent } from './app.component';
 import { FundamentalsComponent } from './fundamentals/fundamentals.component';
 import { StringArraysComponent } from './string-arrays/string-arrays.component';
 import { SetupAndTeardownComponent } from './setup-and-teardown/setup-and-teardown.component';
+import { HeroesComponent } from './heroes/heroes.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     FundamentalsComponent,
     StringArraysComponent,
-    SetupAndTeardownComponent
+    SetupAndTeardownComponent,
+    HeroesComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

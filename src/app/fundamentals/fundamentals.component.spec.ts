@@ -10,7 +10,7 @@ import { of } from 'rxjs';
 
 import { FundamentalsComponent } from './fundamentals.component';
 
-describe('FundamentalsComponent', () => {
+fdescribe('FundamentalsComponent', () => {
   let component: FundamentalsComponent;
   let fixture: ComponentFixture<FundamentalsComponent>;
 
